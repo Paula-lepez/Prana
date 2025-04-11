@@ -1,0 +1,19 @@
+@import "base/reset";
+
+
+header{
+    display: flex;
+    
+    navbar-brand img {
+        width: 30%;
+        height: auto;
+        object-fit: contain;
+}
+}
+
+main{
+    swipper-slide {
+        display: block;
+        margin: 0 auto;
+    }
+}

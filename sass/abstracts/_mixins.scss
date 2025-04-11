@@ -1,0 +1,19 @@
+// -----------PROPIEDADES -----------
+
+//color ,px , fuente , column , rem , %  , ( 1 variable y 1 valor ) 
+
+// mixin con parametros:
+@mixin medidas($width, $height){
+    width: $width ;
+    height: $height;
+}
+
+
+//mixin sin parametros c
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
