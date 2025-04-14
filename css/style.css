@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-.footer-button {
-  display: flex;
-  justify-content: flex-start;
-  font-size: small;
-}
-
 .newsletter-btn {
   display: block;
   margin: 20px auto;
@@ -55,10 +49,10 @@ header .navbar-brand img {
   object-fit: contain;
 }
 
-.navbar-nav {
+.navbar {
   text-align: center;
 }
-.navbar-nav .nav-item {
+.navbar .nav-item {
   margin: 10px 0;
 }
 
@@ -82,9 +76,39 @@ header .navbar-brand img {
   max-width: none;
 }
 
+.footer {
+  background-color: #fff;
+  color: black;
+  padding: 30px 0 !important;
+}
+
+.footer-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+  width: 80%;
+}
+
+.footer-logo {
+  width: 40px;
+  height: auto;
+}
+
+/*Subtitulos Principales de cada seccion */
 .my-5, .my-6 {
   text-align: center;
   padding: 2%;
+  color: rgb(6, 37, 29);
 }
 
 .jeyerly {
@@ -126,7 +150,7 @@ p:hover {
   background-color: #f8f9fa;
 }
 #joyas h2 {
-  font-size: 28px;
+  font-size: 26px;
   margin-bottom: 20px;
   color: #333;
 }

@@ -1,0 +1,25 @@
+.footer {
+    background-color: #fff;
+    color: black;
+    padding: 30px 0 !important;
+  }
+  .footer-payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .footer-logos {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+    width: 80%;
+  }
+  .footer-logo {
+    width: 40px;
+    height: auto;
+  }
+  

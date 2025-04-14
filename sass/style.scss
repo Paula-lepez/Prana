@@ -1,58 +1,22 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "base/reset";
-@import "components/footerbutton";
 @import "components/newsletterbutton";
 @import "components/whatsappbutton";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
 
 
 
 
+// 
+/*Subtitulos Principales de cada seccion */
 
-//Contenido principal
-header{
-    
-    .navbar-brand img {
-        @include size(30%, auto);
-          object-fit: contain;
-      
-}
-}
-
-
-.navbar-nav {
-    text-align: center;
-
-    .nav-item {
-      margin: 10px 0;
-    }
-  }
-
-  //Portada principal
-  .swipper-slide {
-    display: block;
-    margin: 0 auto;
-    background-color: $color-gris ;
-    color: $color-secundario;
-    border: none;
-    text-align: center;
-    width: $ancho-slide;
-  
-    &:hover {
-      color: black;
-    }
-  }
-  
-  .slide-grid {
-    @include size(20%, auto);
-    margin: 30px;
-    max-width: none;
-  }
-
-  //Seccion productos esto es seccion productos??
   .my-5, .my-6 {
     text-align: center;
     padding: 2%;
+    color: rgb(6, 37, 29);
   }
   
   .jeyerly {
@@ -98,7 +62,7 @@ header{
     background-color: #f8f9fa;
   
     h2 {
-      font-size: 28px;
+      font-size: 26px;
       margin-bottom: 20px;
       color: #333;
     }

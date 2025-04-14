@@ -1,0 +1,27 @@
+.navbar {
+    text-align: center;
+
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
+
+  .swipper-slide {
+    display: block;
+    margin: 0 auto;
+    background-color: $color-gris ;
+    color: $color-secundario;
+    border: none;
+    text-align: center;
+    width: $ancho-slide;
+  
+    &:hover {
+      color: black;
+    }
+  }
+  
+  .slide-grid {
+    @include size(20%, auto);
+    margin: 30px;
+    max-width: none;
+  }
