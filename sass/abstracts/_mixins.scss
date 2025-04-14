@@ -3,13 +3,13 @@
 //color ,px , fuente , column , rem , %  , ( 1 variable y 1 valor ) 
 
 // mixin con parametros:
-@mixin medidas($width, $height){
+@mixin size($width, $height){
     width: $width ;
     height: $height;
 }
 
 
-//mixin sin parametros c
+//mixin sin parametros 
 @mixin flex{
     display: flex;
     justify-content: center;
@@ -17,3 +17,18 @@
     gap: 10px;
 }
 
+
+// Adaptaciones 
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == phone {
+      @media (max-width: 576px) { @content; }
+    }
+    @else if $breakpoint == tablet {
+      @media (min-width: 577px) and (max-width: 992px) { @content; }
+    }
+    @else if $breakpoint == desktop {
+      @media (min-width: 993px) { @content; }
+    }
+  }
+  

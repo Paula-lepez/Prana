@@ -4,18 +4,196 @@
   box-sizing: border-box;
 }
 
-header {
+.footer-button {
   display: flex;
+  justify-content: flex-start;
+  font-size: small;
 }
-header navbar-brand img {
+
+.newsletter-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  appearance: none;
+  text-align: center;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+.whatsapp-button img {
+  width: 40px;
+  height: 40px;
+}
+
+header .navbar-brand img {
   width: 30%;
   height: auto;
   object-fit: contain;
 }
 
-main swipper-slide {
+.navbar-nav {
+  text-align: center;
+}
+.navbar-nav .nav-item {
+  margin: 10px 0;
+}
+
+.swipper-slide {
   display: block;
   margin: 0 auto;
+  background-color: #b3b3b3;
+  color: #fff;
+  border: none;
+  text-align: center;
+  width: 1450px;
+}
+.swipper-slide:hover {
+  color: black;
+}
+
+.slide-grid {
+  width: 20%;
+  height: auto;
+  margin: 30px;
+  max-width: none;
+}
+
+.my-5, .my-6 {
+  text-align: center;
+  padding: 2%;
+}
+
+.jeyerly {
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.jeyerly img {
+  max-width: 325px;
+}
+
+p {
+  font-size: 16px !important;
+  text-align: center;
+  color: black;
+  margin: 20px 10px !important;
+}
+p:hover {
+  color: #09610d;
+}
+
+.form-control {
+  display: block;
+  margin: 30px auto;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid navajowhite;
+  appearance: none;
+  color: black;
+}
+.form-control:not(textarea) {
+  height: 40px;
+}
+
+#joyas {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+#joyas h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+#joyas .grid-joyas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#joyas .grid-joyas .joya {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#joyas .grid-joyas .joya img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#joyas .grid-joyas .joya h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+#joyas .grid-joyas .joya p {
+  font-size: 16px;
+  color: #666;
+}
+#joyas .grid-joyas .joya button {
+  background: #000;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#joyas .grid-joyas .joya button:hover {
+  background: #333;
+}
+
+.footer {
+  background-color: #fff;
+  color: black;
+  padding: 30px 0 !important;
+}
+.footer-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+  width: 80%;
+}
+.footer-logo {
+  width: 40px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
