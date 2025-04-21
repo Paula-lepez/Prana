@@ -1,136 +1,81 @@
 @use "../abstracts/variables" as vars;
-@use "../abstracts/mixins" as m;
 
 
 
-.my-5, .my-6 {
-    text-align: center;
-    padding: 2%;
+.container{
+  color: vars.$color-principal;
+
+}
+.joyas {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.grid-joyas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.joya {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
-  
-  .jeyerly {
-    padding: 5%;
-    display: flex;
-    justify-content: space-around;
-  
-    img {
-      max-width: 325px;
-    }
-  }
-  p {
-    font-size: $font-size-base !important;
-    text-align: center;
-    color: black;
-    margin: 20px 10px !important;
-  
-    &:hover {
-      color: $color-hover;
-    }
-  }
-  
-  .form-control {
-    display: block;
-    margin: 30px auto;
-    padding: 12px;
+
+  img {
     width: 100%;
-    font-size: $font-size-base;
-    border: 1px solid navajowhite;
-    appearance: none;
-    color: black;
-  
-    &:not(textarea) {
-      height: 40px;
-    }
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
   }
 
-
- 
-  #joyas {
+  .tittleproducto {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f8f9fa;
-  
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #333;
-    }
-  
-    .grid-joyas {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-  
-      .joya {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-  
-        img {
-          width: 100%;
-          max-height: 200px;
-          object-fit: cover;
-          border-radius: 10px;
-        }
-  
-        h3 {
-          font-size: 20px;
-          margin: 10px 0;
-        }
-  
-        p {
-          font-size: 16px;
-          color: #666;
-        }
-  
-        button {
-          background: vars.$color-principal;
-          color: white;
-          padding: 10px 15px;
-          border: none;
-          border-radius: 50px;
-          cursor: pointer;
-          transition: 0.3s;
-  
-          &:hover {
-            background: #333;
-          }
-        }
-      }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+      text-align: center;
     }
   }
-  
-  
-  //Footer 
 
-  .footer {
-    background-color: vars.$color-secundario;
-    color: black;
-    padding: 30px 0 !important;
-  
-    &-payment {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
+  button {
+    align-self: center;
+    background: vars.$color-principal;
+    color: vars.$color-blanco;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background: darken(vars.$color-principal, 10%);
     }
-  
-    &-logos {
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
-      gap: 20px;
-      width: 80%;
-    }
-  
-    &-logo {
-      @include m.size (40px, auto);
-      }
-    }
-  
+  }
+}
+

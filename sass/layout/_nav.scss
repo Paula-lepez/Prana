@@ -12,14 +12,14 @@
 .swipper-slide {
   display: block;
   margin: 0 auto;
-  background-color: vars.$color-gris;
-  color: vars.$color-secundario;
+  background-color: vars.$color-slide;
+  color: vars.$color-principal;
   border: none;
   text-align: center;
-  @include m.size(100%, auto); // <-- PASÁ LOS VALORES QUE NECESITES
+  @include m.size(100%, auto); 
 
   &:hover {
-    color: black;
+    color:bisque;
   }
 }
 

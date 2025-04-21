@@ -9,11 +9,11 @@
   margin: 20px auto;
   padding: 15px 20px;
   background-color: #000;
-  color: hsl(0, 15%, 53%);
+  color: hsla(0, 30%, 83%, 0.389);
   border-radius: 50px;
   cursor: pointer;
   appearance: none;
-  text-align: center;
+  text-align: center !important;
   letter-spacing: 8px;
   text-transform: uppercase;
   transition: background-color 0.3s ease-in-out;
@@ -25,7 +25,7 @@
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: hsl(0, 15%, 53%);
+  background-color: hsla(0, 30%, 83%, 0.389);
   border-radius: 80%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -53,15 +53,15 @@
 .swipper-slide {
   display: block;
   margin: 0 auto;
-  background-color: rgba(179, 179, 179, 0.8588235294);
-  color: hsl(0, 15%, 53%);
+  background-color: rgba(137, 79, 79, 0.8588235294);
+  color: #000;
   border: none;
   text-align: center;
   width: 100%;
   height: auto;
 }
 .swipper-slide:hover {
-  color: black;
+  color: bisque;
 }
 
 .slide-grid {
@@ -128,6 +128,7 @@ p {
   line-height: 1.6;
   margin-bottom: 1rem;
   color: #333;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -141,6 +142,77 @@ p {
     font-size: 1.125rem;
   }
 }
+.container {
+  color: #000;
+}
+
+.joyas {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.grid-joyas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.joya {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.joya:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.joya img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.joya .tittleproducto {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.joya .tittleproducto p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.joya button {
+  align-self: center;
+  background: #000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.joya button:hover {
+  background: black;
+}
+
 .my-5, .my-6 {
   text-align: center;
   padding: 2%;
@@ -154,19 +226,27 @@ p {
 }
 .jeyerly img {
   max-width: 325px;
+  gap: 20px;
+  flex-wrap: wrap;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
-
-p {
+.jeyerly img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
+}
+.jeyerly p {
   font-size: 16px !important;
   text-align: center;
   color: black;
   margin: 20px 10px !important;
 }
-p:hover {
-  color: #09610d;
+.jeyerly p:hover {
+  color: bisque;
 }
-
-.form-control {
+.jeyerly .form-control {
   display: block;
   margin: 30px auto;
   padding: 12px;
@@ -176,84 +256,8 @@ p:hover {
   appearance: none;
   color: black;
 }
-.form-control:not(textarea) {
+.jeyerly .form-control:not(textarea) {
   height: 40px;
-}
-
-#joyas {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f8f9fa;
-}
-#joyas h2 {
-  font-size: 26px;
-  margin-bottom: 20px;
-  color: #333;
-}
-#joyas .grid-joyas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-#joyas .grid-joyas .joya {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-#joyas .grid-joyas .joya img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-#joyas .grid-joyas .joya h3 {
-  font-size: 20px;
-  margin: 10px 0;
-}
-#joyas .grid-joyas .joya p {
-  font-size: 16px;
-  color: #666;
-}
-#joyas .grid-joyas .joya button {
-  background: #000;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-#joyas .grid-joyas .joya button:hover {
-  background: #333;
-}
-
-.footer {
-  background-color: hsl(0, 15%, 53%);
-  color: black;
-  padding: 30px 0 !important;
-}
-.footer-payment {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.footer-logos {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 20px;
-  width: 80%;
-}
-.footer-logo {
-  width: 40px;
-  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
