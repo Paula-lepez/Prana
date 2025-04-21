@@ -1,27 +1,30 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as m;
+
 .navbar {
-    text-align: center;
+  text-align: center;
 
-    .nav-item {
-      margin: 10px 0;
-    }
+  .nav-item {
+    margin: 10px 0;
   }
+}
 
-  .swipper-slide {
-    display: block;
-    margin: 0 auto;
-    background-color: $color-gris ;
-    color: $color-secundario;
-    border: none;
-    text-align: center;
-    width: $ancho-slide;
-  
-    &:hover {
-      color: black;
-    }
+.swipper-slide {
+  display: block;
+  margin: 0 auto;
+  background-color: vars.$color-gris;
+  color: vars.$color-secundario;
+  border: none;
+  text-align: center;
+  @include m.size(100%, auto); // <-- PASÁ LOS VALORES QUE NECESITES
+
+  &:hover {
+    color: black;
   }
-  
-  .slide-grid {
-    @include size(20%, auto);
-    margin: 30px;
-    max-width: none;
-  }
+}
+
+.slide-grid {
+  @include m.size(20%, auto);
+  margin: 30px;
+  max-width: none;
+}

@@ -1,8 +1,46 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "base/reset";
-@import "components/footerbutton";
-@import "layout/header";
-@import "layout/nav";
-@import "layout/footer";
 
+.faqs {
+    padding: 2rem;
+    background-color: #fff;
+    color: #06251d; 
+  }
+  
+  .my-5 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #06251d;
+  }
+  
+   .my-6 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #06251d;
+  
+    strong {
+      font-weight: 600;
+    }
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  @media (min-width: 768px) {
+    .my-5 {
+      font-size: 2.5rem;
+    }
+  
+    .my-6 {
+      font-size: 1.75rem;
+    }
+  
+    p {
+      font-size: 1.125rem;
+    }
+  }

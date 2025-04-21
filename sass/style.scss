@@ -1,17 +1,15 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "base/reset";
-@import "components/newsletterbutton";
-@import "components/whatsappbutton";
-@import "layout/header";
-@import "layout/nav";
-@import "layout/footer";
+@use "./abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+@use "base/reset" as *;
+@use "components/newsletterbutton" as *;
+@use "components/whatsappbutton" as *;
+@use "layout/nav" as *;
+@use "layout/footer" as *;
+@use "pages/faqs" as *;
 
 
 
 
-// 
-/*Subtitulos Principales de cada seccion */
 
   .my-5, .my-6 {
     text-align: center;

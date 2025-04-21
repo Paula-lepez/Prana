@@ -1,13 +1,16 @@
+@use "../abstracts/variables" as vars;
+
+
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 60px;
     height: 60px;
-    background-color: $color-secundario;
+    background-color: vars.$color-secundario;
     border-radius: 80%;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 10px $color-shadow;
+    box-shadow: 2px 2px 10px vars.$color-shadow;
     display: flex;
     justify-content: center;
     align-items: center;

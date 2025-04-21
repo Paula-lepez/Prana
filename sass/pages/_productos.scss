@@ -1,16 +1,8 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "base/reset";
-@import "components/footerbutton";
-@import "layout/header";
-@import "layout/nav";
-@import "layout/footer";
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as m;
 
 
 
-
-
-//Seccion productos esto es seccion productos??
 .my-5, .my-6 {
     text-align: center;
     padding: 2%;
@@ -96,7 +88,7 @@
         }
   
         button {
-          background: $color-principal;
+          background: vars.$color-principal;
           color: white;
           padding: 10px 15px;
           border: none;
@@ -116,7 +108,7 @@
   //Footer 
 
   .footer {
-    background-color: $color-secundario;
+    background-color: vars.$color-secundario;
     color: black;
     padding: 30px 0 !important;
   
@@ -138,7 +130,7 @@
     }
   
     &-logo {
-      @include size (40px, auto);
+      @include m.size (40px, auto);
       }
     }
   
