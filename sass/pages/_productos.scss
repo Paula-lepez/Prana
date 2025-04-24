@@ -74,7 +74,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-      background: darken(vars.$color-principal, 10%);
+      background: vars.$color-principal;
     }
   }
 }

@@ -7,63 +7,6 @@
 @use "layout/footer" as *;
 @use "pages/faqs" as *;
 @use "pages/productos" as *;
+@use "pages/home" as *;
 
 
-
-
-
-  .my-5, .my-6 {
-    text-align: center;
-    padding: 2%;
-    color: rgb(6, 37, 29);
-  }
-  
-  .jeyerly {
-    padding: 5%;
-    display: flex;
-    justify-content: space-around;
-  
-    img {
-      max-width: 325px;
-      gap: 20px; 
-      flex-wrap: wrap; 
-      object-fit: cover;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-      transition: all 0.3s ease;
-
-      &:hover {
-        transform: scale(1.06); 
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
-        filter: brightness(1.1); 
-    }
-  }
-
-
-  p {
-    font-size: 16px !important;
-    text-align: center;
-    color: black;
-    margin: 20px 10px !important;
-  
-    &:hover {
-      color: bisque;
-    }
-  }
-  
-  .form-control {
-    display: block;
-    margin: 30px auto;
-    padding: 12px;
-    width: 100%;
-    font-size: 16px;
-    border: 1px solid navajowhite;
-    appearance: none;
-    color: black;
-  
-    &:not(textarea) {
-      height: 40px;
-    }
-  }
-
-  
-}

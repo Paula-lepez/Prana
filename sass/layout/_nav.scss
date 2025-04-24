@@ -16,15 +16,33 @@
   color: vars.$color-principal;
   border: none;
   text-align: center;
+
+ 
   @include m.size(100%, auto); 
 
+  
+  @media (max-width: 768px) {
+    @include m.size(80%, auto); 
+  }
+
+  @media (max-width: 480px) {
+    @include m.size(90%, auto);
+  }
+
   &:hover {
-    color:bisque;
+    color: bisque;
   }
 }
 
 .slide-grid {
   @include m.size(20%, auto);
   margin: 30px;
-  max-width: none;
+  max-width: 100%;  
+
+  @media (max-width: 768px) {
+    @include m.size(40%, auto); }
+
+  @media (max-width: 480px) {
+    @include m.size(60%, auto); 
+  }
 }

@@ -1,0 +1,69 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as *;
+@use "../base/reset" as *;
+
+
+
+body{
+  overflow-x: hidden;
+}
+
+.my-5, .my-6 {
+  text-align: center;
+  padding: 2%;
+  color: rgb(6, 37, 29);
+}
+
+.jeyerly {
+  padding: 5%;
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+
+  img {
+    max-width: 100%; 
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.06);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      filter: brightness(1.1);
+    }
+  }
+}
+p {
+  font-size: 16px !important;
+  text-align: center;
+  color: black;
+  margin: 20px 10px !important;
+
+  &:hover {
+    color: bisque;
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  height: auto; 
+  padding: 15px; 
+  font-size: 16px;
+  color: black;
+  max-width: 400px; 
+  margin: 0 auto; 
+  
+  form {
+    width: 100%;  
+    max-width: 400px; 
+    text-align: center;
+    
+    &:not(textarea) {
+      height: 40px; 
+    }
+  }
+}

@@ -60,6 +60,18 @@
   width: 100%;
   height: auto;
 }
+@media (max-width: 768px) {
+  .swipper-slide {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .swipper-slide {
+    width: 90%;
+    height: auto;
+  }
+}
 .swipper-slide:hover {
   color: bisque;
 }
@@ -68,13 +80,25 @@
   width: 20%;
   height: auto;
   margin: 30px;
-  max-width: none;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .slide-grid {
+    width: 40%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .slide-grid {
+    width: 60%;
+    height: auto;
+  }
 }
 
 .footer {
   background-color: #fff;
   color: black;
-  padding: 30px 0 !important;
+  padding: 0 20px !important;
 }
 
 .footer-payment {
@@ -91,7 +115,7 @@
   justify-content: center;
   margin: 0 auto;
   gap: 20px;
-  width: 80%;
+  width: 40%;
 }
 
 .footer-logo {
@@ -210,7 +234,11 @@ p {
   transition: background-color 0.3s ease;
 }
 .joya button:hover {
-  background: black;
+  background: #000;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .my-5, .my-6 {
@@ -222,12 +250,12 @@ p {
 .jeyerly {
   padding: 5%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .jeyerly img {
-  max-width: 325px;
-  gap: 20px;
-  flex-wrap: wrap;
+  max-width: 100%;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -237,26 +265,35 @@ p {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   filter: brightness(1.1);
 }
-.jeyerly p {
+
+p {
   font-size: 16px !important;
   text-align: center;
   color: black;
   margin: 20px 10px !important;
 }
-.jeyerly p:hover {
+p:hover {
   color: bisque;
 }
-.jeyerly .form-control {
-  display: block;
-  margin: 30px auto;
-  padding: 12px;
-  width: 100%;
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  padding: 15px;
   font-size: 16px;
-  border: 1px solid navajowhite;
-  appearance: none;
   color: black;
+  max-width: 400px;
+  margin: 0 auto;
 }
-.jeyerly .form-control:not(textarea) {
+.form-container form {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.form-container form:not(textarea) {
   height: 40px;
 }
 
