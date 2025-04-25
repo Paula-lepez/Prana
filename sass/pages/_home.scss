@@ -4,9 +4,7 @@
 
 
 
-body{
-  overflow-x: hidden;
-}
+
 
 .my-5, .my-6 {
   text-align: center;
@@ -59,7 +57,7 @@ p {
   
   form {
     width: 100%;  
-    max-width: 400px; 
+    max-width: 100%; 
     text-align: center;
     
     &:not(textarea) {

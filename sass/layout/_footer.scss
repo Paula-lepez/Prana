@@ -1,25 +1,50 @@
 .footer {
-    background-color: #fff;
-    color: black;
-    padding: 0 20px !important;
-  }
-  .footer-payment {
+  background-color: #f8f8f8;
+  color: #222;
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+
+  &__payments {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  .footer-logos {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
-    gap: 20px;
-    width: 40%;
+    gap: 1rem;
   }
-  .footer-logo {
-    width: 40px;
+
+  &__logo {
+    width: 50px;
     height: auto;
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
   }
-  
+
+  &__social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+    
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__copy {
+    font-size: 0.875rem;
+    color: #666;
+    margin: 0;
+  }
+}

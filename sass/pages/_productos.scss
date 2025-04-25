@@ -1,7 +1,8 @@
 @use "../abstracts/variables" as vars;
 
-
-
+body {
+  overflow-x: hidden; 
+}
 .container{
   color: vars.$color-principal;
 

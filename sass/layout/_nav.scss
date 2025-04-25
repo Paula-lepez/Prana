@@ -9,40 +9,37 @@
   }
 }
 
-.swipper-slide {
-  display: block;
-  margin: 0 auto;
-  background-color: vars.$color-slide;
-  color: vars.$color-principal;
-  border: none;
-  text-align: center;
 
- 
-  @include m.size(100%, auto); 
-
+   #hero-carousel {
+    max-height: 90vh;
+    overflow: hidden;
+  }
   
-  @media (max-width: 768px) {
-    @include m.size(80%, auto); 
+  #hero-carousel img {
+    height: 90vh;
+    object-fit: cover;
+    filter: brightness(0.7); 
   }
-
-  @media (max-width: 480px) {
-    @include m.size(90%, auto);
+  
+  .carousel-caption {
+    bottom: 20%;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
   }
-
-  &:hover {
-    color: bisque;
+  
+  .carousel-caption h1,
+  .carousel-caption p {
+    animation: fadeInUp 1s ease-in-out both;
   }
-}
-
-.slide-grid {
-  @include m.size(20%, auto);
-  margin: 30px;
-  max-width: 100%;  
-
-  @media (max-width: 768px) {
-    @include m.size(40%, auto); }
-
-  @media (max-width: 480px) {
-    @include m.size(60%, auto); 
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-}
+  
