@@ -1,13 +1,14 @@
 .footer {
-  background-color: #f8f8f8;
+  background-color: rgba(213, 206, 195, 0.405);
   color: #222;
   padding: 2rem 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 100%;
+  min-height: 80px;
 
   &__payments {
     display: flex;
@@ -43,8 +44,9 @@
   }
 
   &__copy {
-    font-size: 0.875rem;
-    color: #666;
+    font-size: 11px !important;
+    color: #666 !important;
     margin: 0;
+    margin-top: auto;
   }
 }

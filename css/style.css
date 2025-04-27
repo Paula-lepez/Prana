@@ -35,7 +35,7 @@
   z-index: 1000;
   transition: transform 0.3s ease-in-out;
 }
-.whatsapp-button:hover {
+.whatsapp-button-wsp:hover {
   transform: scale(1.1);
 }
 .whatsapp-button img {
@@ -83,15 +83,16 @@
   }
 }
 .footer {
-  background-color: #f8f8f8;
+  background-color: rgba(213, 206, 195, 0.405);
   color: #222;
   padding: 2rem 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 100%;
+  min-height: 80px;
 }
 .footer__payments {
   display: flex;
@@ -121,9 +122,10 @@
   opacity: 0.7;
 }
 .footer__copy {
-  font-size: 0.875rem;
-  color: #666;
+  font-size: 11px !important;
+  color: #666 !important;
   margin: 0;
+  margin-top: auto;
 }
 
 .faqs {
@@ -279,6 +281,10 @@ p:hover {
   color: bisque;
 }
 
+.carousel-caption p {
+  color: bisque;
+}
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -298,6 +304,16 @@ p:hover {
 }
 .form-container form:not(textarea) {
   height: 40px;
+}
+
+.h3subtitulo {
+  text-align: center;
+  padding: 2%;
+  color: rgb(6, 37, 29);
+}
+
+.text-primary {
+  color: burlywood !important;
 }
 
 /*# sourceMappingURL=style.css.map */
