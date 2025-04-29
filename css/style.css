@@ -248,8 +248,9 @@ body {
 
 .my-5, .my-6 {
   text-align: center;
-  padding: 2%;
+  padding: 0;
   color: rgb(6, 37, 29);
+  margin-top: 0;
 }
 
 .jeyerly {
