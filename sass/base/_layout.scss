@@ -1,18 +1,1 @@
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
-main {
-  flex: 1;
-}
-
-
-.footer {
-  background-color: #f8f9fa; 
-  padding: 1rem;
-  text-align: center;
-  position: static !important;
-  bottom:0;
-}
