@@ -1,6 +1,7 @@
 @use "./abstracts/variables" as vars;
 @use "abstracts/mixins" as *;
 @use "base/reset" as *;
+@use "base/layout" as *;
 @use "components/newsletterbutton" as *;
 @use "components/whatsappbutton" as *;
 @use "layout/nav" as *;
