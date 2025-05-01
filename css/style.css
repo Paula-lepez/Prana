@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
 .newsletter-btn {
   display: block;
   margin: 20px auto;
@@ -85,14 +100,16 @@
 .footer {
   background-color: rgba(213, 206, 195, 0.405);
   color: #222;
-  padding: 2rem 1rem;
+  padding: 1rem 0.4rem;
   text-align: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   width: 100%;
-  min-height: 80px;
+  flex-shrink: 0;
+  height: auto;
 }
 .footer__payments {
   display: flex;
@@ -101,7 +118,7 @@
   gap: 1rem;
 }
 .footer__logo {
-  width: 50px;
+  width: 40px;
   height: auto;
   transition: transform 0.2s ease;
 }
@@ -114,8 +131,8 @@
   justify-content: center;
 }
 .footer__icon {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   transition: opacity 0.3s;
 }
 .footer__icon:hover {
@@ -126,6 +143,21 @@
   color: #666 !important;
   margin: 0;
   margin-top: auto;
+}
+
+.footer__logo {
+  width: 50px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+.footer__logo:hover {
+  transform: scale(1.1);
+}
+
+.footer__social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .faqs {
@@ -181,7 +213,7 @@ body {
 
 .joyas {
   text-align: center;
-  padding: 50px 20px;
+  padding: 5px 10px 15px;
   background-color: #f8f9fa;
 }
 
@@ -219,17 +251,21 @@ body {
   margin-bottom: 10px;
 }
 .joya .tittleproducto {
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: #222;
+  color: #455244;
   margin-bottom: 8px;
   text-align: center;
 }
 .joya .tittleproducto p {
-  font-size: 14px;
+  font-size: 1rem;
   color: #555;
   margin-bottom: 10px;
   text-align: center;
+}
+.joya .tittleproducto h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
 .joya button {
   align-self: center;
@@ -251,6 +287,8 @@ body {
   padding: 0;
   color: rgb(6, 37, 29);
   margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2rem;
 }
 
 .jeyerly {
@@ -273,7 +311,7 @@ body {
 }
 
 p {
-  font-size: 16px !important;
+  font-size: 16px;
   text-align: center;
   color: black;
   margin: 20px 10px !important;

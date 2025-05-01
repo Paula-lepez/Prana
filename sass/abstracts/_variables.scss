@@ -1,14 +1,23 @@
+//colores principales
 $color-principal: #000;
 $color-secundario: hsla(0, 30%, 83%, 0.389);
+
+//colores neutros
 $color-gris: #b3b3b3db;
 $color-blanco: #ffffff;
+
+//colores de estado
 $color-hover: bisque;
 $color-shadow: rgba(0, 0, 0, 0.3);
+
+
+
+//colores acentos
 $color-slide: #894f4fdb;
 $color-border: 1px solid navajowhite;
 
-
+// Tamaños de fuentes
 $font-size-base: 16px;
 
-
+// Ancho de elementos específicos
 $ancho-slide: 1450px;

@@ -1,14 +1,20 @@
+
 .footer {
   background-color: rgba(213, 206, 195, 0.405);
   color: #222;
-  padding: 2rem 1rem;
+  padding: 1rem 0.4rem;
   text-align: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   width: 100%;
-  min-height: 80px;
+  flex-shrink: 0;
+  height: auto;   
+
+
+
 
   &__payments {
     display: flex;
@@ -18,7 +24,7 @@
   }
 
   &__logo {
-    width: 50px;
+    width: 40px;
     height: auto;
     transition: transform 0.2s ease;
     
@@ -34,8 +40,8 @@
   }
 
   &__icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     transition: opacity 0.3s;
     
     &:hover {
@@ -50,3 +56,18 @@
     margin-top: auto;
   }
 }
+
+.footer__logo {
+  width: 50px;
+  height: auto;
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.footer__social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}   
