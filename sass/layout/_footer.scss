@@ -9,8 +9,8 @@
   gap: 1rem;
   width: 100%;
   min-height: 80px;
-  position: fixed;
-  bottom: 0;
+  position: fixed !important;
+  bottom: 0 !important;
 
   &__payments {
     display: flex;
