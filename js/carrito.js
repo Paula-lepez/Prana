@@ -11,81 +11,94 @@ const productos = [
     { id: 9, nombre: "Aros Prana", precio: 45000 },
 ];
 
-// Cargar carrito desde localStorage
+
+
+// 1. Cargar carrito desde localStorage
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-// Cuando carga el DOM
-document.addEventListener("DOMContentLoaded", () => {
-    const botonesAgregar = document.querySelectorAll(".btn-agregar");
+// 2. Seleccionar contador
+let contadorCarrito = document.querySelector('.cart-count');
 
-    botonesAgregar.forEach((btn) => {
-        btn.addEventListener("click", () => {
-            const id = parseInt(btn.dataset.id);
-            const producto = productos.find(p => p.id === id);
-            if (producto) {
-                carrito.push(producto);
-                localStorage.setItem("carrito", JSON.stringify(carrito));
-                actualizarCarrito();
-            }
-        });
-    });
-
-    actualizarCarrito();
-});
-
-// Función que actualiza la vista del carrito
-function actualizarCarrito() {
-    const contenedor = document.getElementById("lista-carrito");
-    if (!contenedor) return;
-
-    contenedor.innerHTML = "";
-
-    if (carrito.length === 0) {
-        contenedor.innerHTML = "<p>El carrito está vacío.</p>";
-        return;
-    }
-
-    let total = 0;
-
-    carrito.forEach((product, index) => {
-        const div = document.createElement("div");
-        div.classList.add("producto-carrito");
-        div.innerHTML = `
-            <p>${product.nombre} - $${product.precio}</p>
-            <button class="btn-eliminar" data-index="${index}">Eliminar</button>
-        `;
-        contenedor.appendChild(div);
-        total += product.precio;
-    });
-
-    const totalHTML = `
-        <div class="col-12 text-center mt-4">
-            <h4>Total: $${total}</h4>
-            <button id="vaciar-carrito" class="btn btn-danger mt-2">Vaciar carrito</button>
-        </div>
-    `;
-    contenedor.insertAdjacentHTML("beforeend", totalHTML);
-
-    // Evento para vaciar carrito
-    document.getElementById("vaciar-carrito").addEventListener("click", () => {
-        carrito = [];
-        localStorage.removeItem("carrito");
-        actualizarCarrito();
-    });
-
-    // Botones individuales de eliminar
-    const botonesEliminar = document.querySelectorAll(".btn-eliminar");
-    botonesEliminar.forEach((btn) => {
-        btn.addEventListener("click", () => {
-            const index = parseInt(btn.dataset.index);
-            eliminarProducto(index);
-        });
-    });
+// 3. Mostrar cantidad inicial
+if (contadorCarrito) {
+  contadorCarrito.textContent = carrito.length;
 }
 
-// Eliminar producto individual
-function eliminarProducto(index) {
-    carrito.splice(index, 1);
-    localStorage.setItem("carrito", JSON.stringify(carrito));
+// 4. DOM
+document.addEventListener("DOMContentLoaded", () => {
+  const botonesAgregar = document.querySelectorAll(".btn-agregar");
+
+  botonesAgregar.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = parseInt(btn.dataset.id);
+      const producto = productos.find(p => p.id === id);
+      if (producto) {
+        carrito.push(producto);
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        actualizarCarrito();
+      }
+    });
+  });
+
+  actualizarCarrito();
+});
+
+// 5. Función para actualizar carrito
+function actualizarCarrito() {
+  if (contadorCarrito) {
+    contadorCarrito.textContent = carrito.length;
+  }
+
+  const contenedor = document.getElementById("carrito-contenedor");
+  if (!contenedor) return;
+
+  contenedor.innerHTML = "";
+
+  if (carrito.length === 0) {
+    contenedor.innerHTML = "<p>El carrito está vacío.</p>";
+    return;
+  }
+
+  let total = 0;
+
+  carrito.forEach((product, index) => {
+    const div = document.createElement("div");
+    div.classList.add("producto-carrito");
+    div.innerHTML = `
+      <p>${product.nombre} - $${product.precio}</p>
+      <button class="btn-eliminar" data-index="${index}">Eliminar</button>
+    `;
+    contenedor.appendChild(div);
+    total += product.precio;
+  });
+
+  const totalHTML = `
+    <div class="col-12 text-center mt-4">
+      <h4>Total: $${total}</h4>
+      <button id="vaciar-carrito" class="btn btn-danger mt-2">Vaciar carrito</button>
+    </div>
+  `;
+  contenedor.insertAdjacentHTML("beforeend", totalHTML);
+
+  // Vaciar carrito
+  document.getElementById("vaciar-carrito").addEventListener("click", () => {
+    carrito = [];
+    localStorage.removeItem("carrito");
     actualizarCarrito();
+  });
+
+  // Eliminar productos individuales
+  const botonesEliminar = document.querySelectorAll(".btn-eliminar");
+  botonesEliminar.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const index = parseInt(btn.dataset.index);
+      eliminarProducto(index);
+    });
+  });
+}
+
+function eliminarProducto(index) {
+  carrito.splice(index, 1);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  actualizarCarrito();
 }
