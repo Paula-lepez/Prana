@@ -19,21 +19,6 @@ footer {
   margin-top: auto;
 }
 
-.newsletter-btn {
-  display: block;
-  margin: 20px auto;
-  padding: 15px 20px;
-  background-color: #000;
-  color: hsla(0, 30%, 83%, 0.389);
-  border-radius: 50px;
-  cursor: pointer;
-  appearance: none;
-  text-align: center !important;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease-in-out;
-}
-
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -56,6 +41,56 @@ footer {
 .whatsapp-button img {
   width: 40px;
   height: 40px;
+}
+
+.newsletter {
+  padding: 15px 20px 60px 20px;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: hsla(0, 30%, 83%, 0.389);
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.newsletter-btn {
+  background-color: rgb(222, 197, 197);
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-eliminar {
+  background-color: #ff4d4d !important;
+  color: white;
+  border-radius: 2%;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.vaciar-carrito {
+  background-color: #005714 !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-success {
+  background-color: aqua;
 }
 
 .navbar {
@@ -100,7 +135,6 @@ footer {
 .footer {
   background-color: rgba(213, 206, 195, 0.405);
   color: #222;
-  padding: 1rem 0.4rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -110,6 +144,7 @@ footer {
   width: 100%;
   flex-shrink: 0;
   height: auto;
+  padding: 20px;
 }
 .footer__payments {
   display: flex;

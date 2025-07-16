@@ -38,12 +38,46 @@
 
   <!-- Carrito principal -->
 
-  
+
   <main class="container mt-5">
     <h2 class="mb-4 text-center">Carrito de Compras</h2>
     <section id="carrito-contenedor" class="row g-4"></section>
   </main>
 
+
+<div class="form-envio mt-4">
+  <h5>Calcular envío</h5>
+  <form id="form-envio" class="d-flex gap-2 flex-column flex-md-row align-items-start align-items-md-center">
+    <input type="text" id="codigo-postal" class="form-control" placeholder="Código Postal">
+    <button type="submit" class="btn btn-dark">Calcular</button>
+  </form>
+  <p id="resultado-envio" class="mt-2 text-success"></p>
+</div>
+  <div class="total-carrito mt-4">
+    <h5>Total del Carrito: <span id="total-carrito">$0</span></h5>
+    <button id="btn-finalizar-compra" class="btn btn-success">Finalizar Compra</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
 
   <footer class="footer mt-5">
     <div class="footer__payments">
