@@ -2,7 +2,7 @@
 
 
 .newsletter {
-  padding: 15px 20px 60px 20px; // Padding inferior más grande
+  padding: 15px 20px 60px 20px;
   margin-bottom: 0; 
   text-align: center;
   background-color: vars.$color-secundario;
@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px; // separa los elementos dentro del form
+  gap: 15px; 
 
 }
 
@@ -32,3 +32,12 @@
 
 }   
  
+.form-success,
+.form-error {
+  display: none;
+  padding: 40px 40px;
+  background-color:  hsla(0, 30%, 83%, 0.389);;
+  color: #000000;
+  text-align: center;
+
+}

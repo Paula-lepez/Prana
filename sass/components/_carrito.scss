@@ -4,26 +4,108 @@
 
 
 
-.btn-eliminar {
-  background-color: #ff4d4d !important;
-  color: white;
-  border-radius: 2%;
+.btn-danger {
+  background-color: #ffffff !important;
+  color: rgb(70, 49, 49);
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
+  border: none;
+  border-radius: 5px;
 }
 
 
+.btn-eliminar {
+  background-color: #ffffff !important;
+  color: rgb(70, 49, 49);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
 .vaciar-carrito {
-  background-color: #005714 !important;
-  color: white;
+  background-color: #efdede;
+  color: rgb(9, 0, 0);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
 }
 
+.btn-finalizar-compra {
+  background-color: #ffffff !important;
+  color: rgb(70, 49, 49);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 11px;
+  border: none;
+  border-radius: 5px;
+}
+
 
 .btn-success {
-    background-color: aqua;
+    background-color: rgb(252, 255, 255) !important;
+    color: rgb(9, 0, 0);
+    padding: 10px 20px;
+
+}
+
+//input
+
+
+.form-envio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;      
+  text-align: center;       
+  height: auto;             
+}
+
+.form-envio form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;       
+}
+
+.form-control {
+  width: 60%;              
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;      
+}
+
+.btn {
+  width: 40%;               
+  padding: 10px;
+}
+
+
+
+/* contenedor del carrito */
+
+.total-carrito {
+  display: flex;              
+  flex-direction: column;    
+  justify-content: center;    
+  align-items: center;      
+  text-align: center;     
+  gap: 10px;                 
+  height: auto;            
+}
+
+#total-carrito {
+  font-size: 24px;           
+  font-weight: bold;          
+}
+
+.btn {
+  padding: 10px 20px;       
+  font-size: 16px;            
+  width: 300px;               
 }

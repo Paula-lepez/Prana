@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -71,26 +72,111 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-.btn-eliminar {
-  background-color: #ff4d4d !important;
-  color: white;
-  border-radius: 2%;
+.form-success,
+.form-error {
+  display: none;
+  padding: 40px 40px;
+  background-color: hsla(0, 30%, 83%, 0.389);
+  color: #000000;
+  text-align: center;
+}
+
+.btn-danger {
+  background-color: #ffffff !important;
+  color: rgb(70, 49, 49);
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-eliminar {
+  background-color: #ffffff !important;
+  color: rgb(70, 49, 49);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
 }
 
 .vaciar-carrito {
-  background-color: #005714 !important;
-  color: white;
+  background-color: #efdede;
+  color: rgb(9, 0, 0);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
 }
 
+.btn-finalizar-compra {
+  background-color: #ffffff !important;
+  color: rgb(70, 49, 49);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 11px;
+  border: none;
+  border-radius: 5px;
+}
+
 .btn-success {
-  background-color: aqua;
+  background-color: rgb(252, 255, 255) !important;
+  color: rgb(9, 0, 0);
+  padding: 10px 20px;
+}
+
+.form-envio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto dentro de los elementos */
+  height: auto; /* O ajusta el contenedor según tu diseño */
+}
+
+.form-envio form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos dentro del formulario */
+}
+
+.form-control {
+  width: 60%; /* Ancho del input */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center; /* Centra el texto dentro del input */
+}
+
+.btn {
+  width: 40%; /* Ajusta el tamaño del botón */
+  padding: 10px;
+}
+
+/* contenedor del carrito */
+/* Centrar el contenido del total-carrito */
+.total-carrito {
+  display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+  gap: 10px; /* Espacio entre los elementos */
+  height: auto; /* Ocupa toda la altura de la ventana para centrar verticalmente */
+}
+
+#total-carrito {
+  font-size: 24px; /* Ajusta el tamaño del total */
+  font-weight: bold; /* Puedes hacer el total más destacable */
+}
+
+.btn {
+  padding: 10px 20px; /* Espaciado interno en el botón */
+  font-size: 16px; /* Ajusta el tamaño del texto */
+  width: 300px; /* Puedes ajustar el ancho del botón */
 }
 
 .navbar {

@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const id = parseInt(btn.dataset.id);
       const producto = productos.find(p => p.id === id);
       if (producto) {
-        carrito.push(producto);
+        carrito.push(producto.id);
         localStorage.setItem("carrito", JSON.stringify(carrito));
         actualizarCarrito();
       }
